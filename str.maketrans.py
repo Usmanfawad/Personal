@@ -1,4 +1,4 @@
-print("Encryption via translating a string)
+print("Encryption via translating a string")
 
 a = "aeiou"
 b = "12345"
