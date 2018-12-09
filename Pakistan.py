@@ -14,8 +14,10 @@ left(100)
 curvemove()
 forward(90)
 print(" Pakistan")
-print(u"\u250"*10)
+print(u"\u25A0"*10)
 print(" LOLLL")
-print(u"\u250"*7)
+print(u"\u25A0"*7)
+
 end_fill()
 done()
+
