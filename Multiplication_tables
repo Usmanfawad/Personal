@@ -1,0 +1,15 @@
+print("MULTIPLICATION TABLES")
+import time
+for i in range(1,10):
+    print(i,end='   |   ')
+    
+print()
+print(u"\u25A0"*67,"\n")
+time.sleep(0.1)
+for j in range(1,10):
+    for k in range(1,10):
+        print(j*k,end='\t')
+        time.sleep(0.1)
+    print('\n')
+print(u"\u25A0"*67,"\n")
+time.sleep(0.1)
