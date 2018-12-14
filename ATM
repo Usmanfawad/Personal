@@ -1,12 +1,18 @@
+lst=[3,2,1]
+import time
 atm_worth= int(input("Enter ATM balance: "))
 wth_cash= int(input("Enter amount of cash you wish to withdraw: "))
 print("|ATM BALANCE:              |$"+str(atm_worth))
 print("|Cash withdrawn:           |$"+str(wth_cash))
 if wth_cash<=atm_worth and wth_cash % 5==0:
     atm_worth= (atm_worth-wth_cash)-0.5
-    print("|Balance remaining:        |$"+"{0:.2f}".format(atm_worth))
+    print("Please Wait!")
+    for x in lst:
+        print(x,end='   ')
+        time.sleep(1)
+    print("\n|Balance remaining:        |$"+"{0:.2f}".format(atm_worth))
+    
 elif wth_cash>atm_worth:
     print("Invalid transaction")
 elif wth_cash<=atm_worth and wth_cash % 5!=0:
     print("Cash not a multiple of 5")
-
